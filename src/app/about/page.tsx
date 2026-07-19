@@ -2,51 +2,59 @@ import type { Metadata } from "next";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://example.com";
 
-// Your résumé — edit these three arrays to make the About page yours.
+// Résumé data — the About page is built from these arrays.
 const EXPERIENCE = [
   {
-    role: "Senior Product Engineer",
-    company: "Independent",
-    period: "2022 — Present",
-    blurb: "Building web apps and internal tools for startups, from first sketch to production.",
+    role: "Full-Stack Developer Trainee",
+    company: "Vidhema Technologies",
+    period: "Sep 2025 — Present",
+    blurb: "Build responsive React.js interfaces for enterprise web apps, integrate REST APIs between front and back end, customise Shopify storefronts with Liquid, and develop internal tools and e-commerce features with Node.js.",
   },
   {
-    role: "Full-Stack Developer",
-    company: "Acme Labs",
-    period: "2019 — 2022",
-    blurb: "Shipped customer-facing features across the stack and mentored two junior engineers.",
-  },
-  {
-    role: "Frontend Developer",
-    company: "Startup Co.",
-    period: "2017 — 2019",
-    blurb: "Built the design system and rebuilt the marketing site, cutting load time by 40%.",
+    role: "Java Developer Intern",
+    company: "Oasis Infobyte & CodSoft",
+    period: "Jun — Aug 2024",
+    blurb: "Built Java projects applying object-oriented programming and structured application logic, and optimised existing code for better performance across multiple modules.",
   },
 ];
 
 const SKILL_GROUPS = [
-  { label: "Languages", items: ["TypeScript", "JavaScript", "Python", "SQL"] },
-  { label: "Frameworks", items: ["React", "Next.js", "Node.js", "Tailwind CSS"] },
-  { label: "Tools", items: ["Git", "Figma", "Vercel", "Postgres"] },
+  { label: "Frontend", items: ["React.js", "Next.js", "Angular", "JavaScript", "TypeScript", "HTML5", "CSS3"] },
+  { label: "Backend", items: ["Node.js", "REST APIs"] },
+  { label: "E-commerce", items: ["Shopify", "Liquid"] },
+  { label: "Databases", items: ["MySQL", "MongoDB"] },
+  { label: "Languages", items: ["Python", "SQL", "C/C++"] },
+  { label: "Tools", items: ["Git/GitHub", "VS Code", "Figma"] },
 ];
 
 const EDUCATION = [
-  { degree: "B.S. Computer Science", school: "State University", period: "2013 — 2017" },
+  {
+    degree: "Bachelor of Computer Applications (BCA), Blockchain specialisation",
+    school: "JECRC University, Jaipur",
+    period: "2022 — 2025",
+  },
+];
+
+const CERTIFICATIONS = [
+  "Claude AI Developer Module — Anthropic",
+  "Introduction to Generative AI — Intel",
+  "Java Bootcamp",
+  "Digital Forensics & Cloud Computing",
 ];
 
 export const metadata: Metadata = {
-  title: "About | Alex Rivera",
+  title: "About | Peehu Sharma",
   description:
-    "About Alex Rivera - a product builder and engineer shipping useful things with code and no-code.",
+    "About Peehu Sharma - a full-stack web developer in Jaipur building responsive React and Next.js apps and custom Shopify stores.",
   alternates: {
     canonical: "/about",
   },
   openGraph: {
-    title: "About | Alex Rivera",
+    title: "About | Peehu Sharma",
     description:
-      "About Alex Rivera - a product builder and engineer shipping useful things with code and no-code.",
+      "About Peehu Sharma - a full-stack web developer in Jaipur building responsive React and Next.js apps and custom Shopify stores.",
     url: `${SITE_URL}/about`,
-    images: [{ url: `${SITE_URL}/og-default.png`, width: 1200, height: 630, alt: "About Alex Rivera" }],
+    images: [{ url: `${SITE_URL}/og-default.png`, width: 1200, height: 630, alt: "About Peehu Sharma" }],
   },
 };
 
@@ -55,25 +63,28 @@ export default function AboutPage() {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": `${SITE_URL}/#person`,
-    name: "Alex Rivera",
+    name: "Peehu Sharma",
     url: `${SITE_URL}/about`,
-    jobTitle: "Product Builder & Engineer",
+    jobTitle: "Full-Stack Web Developer",
     description:
-      "Product builder shipping useful things with code and no-code. Alex takes ideas from rough sketch to shipped product, working across design, code, and everything in between.",
+      "Full-stack web developer in Jaipur building responsive React and Next.js apps, Node.js and REST API integrations, and custom Shopify storefronts.",
     image: `${SITE_URL}/images/avatar.svg`,
     sameAs: [
-      "https://github.com/yourhandle",
-      "https://www.linkedin.com/in/yourhandle",
-      "https://x.com/yourhandle",
+      "https://github.com/peehu",
+      "https://linkedin.com/in/peehu",
     ],
     knowsAbout: [
-      "Product design",
       "Web development",
-      "TypeScript",
       "React",
       "Next.js",
-      "No-code tools",
-      "Automation",
+      "Angular",
+      "TypeScript",
+      "Node.js",
+      "REST APIs",
+      "Shopify",
+      "Liquid",
+      "MongoDB",
+      "MySQL",
     ],
   };
 
@@ -88,10 +99,10 @@ export default function AboutPage() {
       <section className="bg-gray-100 dark:bg-gray-900 pt-20 sm:pt-28 pb-16 sm:pb-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-gray-100 tracking-tight mb-4">
-            About <span className="text-brand-500">Alex Rivera</span>
+            About <span className="text-brand-500">Peehu Sharma</span>
           </h1>
           <p className="text-lg sm:text-xl text-gray-500 dark:text-gray-400 leading-relaxed">
-            Product builder shipping useful things with code and no-code.
+            Full-stack web developer building responsive apps and Shopify stores.
           </p>
         </div>
       </section>
@@ -104,7 +115,7 @@ export default function AboutPage() {
             <div className="relative aspect-[4/5] max-w-sm w-full mx-auto lg:mx-0 rounded-2xl overflow-hidden bg-gray-100 dark:bg-gray-900 shadow-sm">
               <img
                 src="/images/avatar.svg"
-                alt="Alex Rivera, Product Builder & Engineer"
+                alt="Peehu Sharma, Full-Stack Web Developer"
                 className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
@@ -112,22 +123,27 @@ export default function AboutPage() {
             {/* Story */}
             <div>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6">
-                Hi, I&apos;m Alex
+                Hi, I&apos;m Peehu
               </h2>
               <div className="space-y-4 text-base text-gray-700 dark:text-gray-300 leading-relaxed">
                 <p>
-                  I&apos;m a product builder and engineer. I take ideas from rough
-                  sketch to shipped product, working across design, code, and
-                  everything in between.
+                  I&apos;m a full-stack web developer based in Jaipur. I build
+                  responsive web applications and e-commerce stores - React.js and
+                  Next.js on the front end, Node.js and REST APIs on the back end,
+                  and custom Shopify storefronts with Liquid.
                 </p>
                 <p>
-                  I care about useful software, clear thinking, and shipping. I&apos;ve
-                  worked on products spanning web apps, internal tools, and
-                  automation.
+                  I&apos;m a BCA graduate (blockchain specialisation), currently
+                  working as a Full-Stack Developer Trainee at Vidhema Technologies,
+                  where I ship UI for enterprise apps, wire up APIs, and customise
+                  Shopify themes. I learn quickly and care about shipping software
+                  that actually works.
                 </p>
                 <p>
-                  This is where I keep my work and occasional writing. If something
-                  resonates, get in touch.
+                  I&apos;ve built an AI-powered attendance system with facial
+                  recognition, a full-stack e-commerce site, and complete Shopify
+                  stores for real brands. If you&apos;re hiring or have a project in
+                  mind, get in touch.
                 </p>
               </div>
             </div>
@@ -208,10 +224,25 @@ export default function AboutPage() {
             ))}
           </div>
 
+          {/* Certifications */}
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mt-14 mb-8">
+            Certifications
+          </h2>
+          <div className="flex flex-wrap gap-2">
+            {CERTIFICATIONS.map((cert) => (
+              <span
+                key={cert}
+                className="rounded-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 px-3 py-1 text-sm text-gray-600 dark:text-gray-400"
+              >
+                {cert}
+              </span>
+            ))}
+          </div>
+
           {/* Contact line */}
           <p className="mt-14 text-base text-gray-600 dark:text-gray-400 leading-relaxed">
             The best way to start a conversation is to{" "}
-            <a href="mailto:hello@example.com" className="text-brand-500 hover:text-brand-600 dark:hover:text-brand-400 font-medium">
+            <a href="mailto:peehu-dummy-email@gmail.com" className="text-brand-500 hover:text-brand-600 dark:hover:text-brand-400 font-medium">
               send me an email
             </a>
             .

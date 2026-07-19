@@ -18,13 +18,13 @@ export function HeroSection() {
           transition={{ duration: 0.6, delay: 0.1 }}
         >
           <span className="block text-sm font-semibold tracking-widest text-brand-500 uppercase mb-6">
-            Product Builder &amp; Engineer
+            Full-Stack Web Developer
           </span>
           <span className="block text-4xl sm:text-5xl lg:text-7xl font-extrabold text-gray-900 dark:text-gray-100 leading-[1.15] tracking-tight">
-            I design and build
+            I build responsive web apps
           </span>
           <span className="block text-4xl sm:text-5xl lg:text-7xl font-extrabold text-brand-500 leading-[1.15] tracking-tight">
-            products that ship.
+            and Shopify stores that sell.
           </span>
         </motion.h1>
 
@@ -34,8 +34,9 @@ export function HeroSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-6 text-base sm:text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed"
         >
-          From idea to launch - web apps, tools, and automations, built with code
-          and no-code. Here&apos;s a selection of my work.
+          I&apos;m Peehu Sharma, a full-stack developer in Jaipur. I help startups
+          and small brands turn ideas into React and Next.js apps and custom
+          Shopify storefronts - front end to REST API.
         </motion.p>
 
         <motion.div
@@ -45,16 +46,16 @@ export function HeroSection() {
           className="mt-10 flex items-center justify-center gap-4"
         >
           <a
-            href="/#work"
+            href="mailto:peehu-dummy-email@gmail.com"
             className="inline-flex items-center px-7 py-3.5 text-sm font-bold text-white bg-accent-500 hover:bg-accent-600 transition-colors rounded-full"
           >
-            View work
+            Hire me
           </a>
           <a
-            href="/about"
+            href="/#work"
             className="inline-flex items-center px-7 py-3.5 text-sm font-bold text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors rounded-full"
           >
-            About me
+            View work
           </a>
         </motion.div>
       </div>

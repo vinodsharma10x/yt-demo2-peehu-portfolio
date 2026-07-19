@@ -34,7 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${SITE_URL}/author/alex-rivera`,
+      url: `${SITE_URL}/author/peehu-sharma`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.5,

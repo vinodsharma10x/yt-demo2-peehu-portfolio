@@ -10,33 +10,32 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://example.com";
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
 
 export const metadata: Metadata = {
-  title: "Alex Rivera - Product builder & engineer",
+  title: "Peehu Sharma - Full-Stack Web Developer",
   description:
-    "Portfolio of Alex Rivera - building products with code and no-code. Selected work, writing, and how to get in touch.",
+    "Portfolio of Peehu Sharma - a full-stack web developer building responsive React and Next.js apps and custom Shopify stores. Selected work, writing, and how to get in touch.",
   metadataBase: new URL(SITE_URL),
   openGraph: {
     type: "website",
     locale: "en_US",
     url: SITE_URL,
-    siteName: "Alex Rivera",
-    title: "Alex Rivera - Product builder & engineer",
+    siteName: "Peehu Sharma",
+    title: "Peehu Sharma - Full-Stack Web Developer",
     description:
-      "Portfolio of Alex Rivera - building products with code and no-code. Selected work, writing, and how to get in touch.",
+      "Portfolio of Peehu Sharma - a full-stack web developer building responsive React and Next.js apps and custom Shopify stores. Selected work, writing, and how to get in touch.",
     images: [
       {
         url: `${SITE_URL}/og-default.png`,
         width: 1200,
         height: 630,
-        alt: "Alex Rivera - Product builder & engineer",
+        alt: "Peehu Sharma - Full-Stack Web Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@yourhandle",
-    title: "Alex Rivera - Product builder & engineer",
+    title: "Peehu Sharma - Full-Stack Web Developer",
     description:
-      "Portfolio of Alex Rivera - building products with code and no-code. Selected work, writing, and how to get in touch.",
+      "Portfolio of Peehu Sharma - a full-stack web developer building responsive React and Next.js apps and custom Shopify stores. Selected work, writing, and how to get in touch.",
     images: [`${SITE_URL}/og-default.png`],
   },
   // Indexable by default. Set NEXT_PUBLIC_NOINDEX=true (e.g. on demo deploys) to hide from search.
@@ -85,7 +84,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <link
           rel="alternate"
           type="application/rss+xml"
-          title="Alex Rivera - Blog"
+          title="Peehu Sharma - Blog"
           href="/feed.xml"
         />
         <link rel="llms" href="/llms.txt" />

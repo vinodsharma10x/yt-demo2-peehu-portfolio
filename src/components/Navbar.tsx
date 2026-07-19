@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
-const BRAND_NAME = "Alex Rivera";
+const BRAND_NAME = "Peehu Sharma";
+const CONTACT_EMAIL = "peehu-dummy-email@gmail.com";
 const NAV = [
   { label: "Work", href: "/#work" },
   { label: "About", href: "/about" },
@@ -34,6 +35,12 @@ export function Navbar() {
               {item.label}
             </Link>
           ))}
+          <a
+            href={`mailto:${CONTACT_EMAIL}`}
+            className="hidden sm:inline-flex items-center px-4 py-2 text-sm font-bold text-white bg-accent-500 hover:bg-accent-600 transition-colors rounded-full"
+          >
+            Hire me
+          </a>
           <ThemeToggle />
         </div>
       </nav>

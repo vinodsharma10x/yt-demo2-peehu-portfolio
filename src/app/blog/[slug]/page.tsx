@@ -41,7 +41,7 @@ export async function generateStaticParams() {
 
 function resolveAuthorName(author?: string): string {
   if (author) return author;
-  return "Alex Rivera";
+  return "Peehu Sharma";
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = await getPostBySlug(slug);
 
   if (!post) {
-    return { title: "Post Not Found | Alex Rivera" };
+    return { title: "Post Not Found | Peehu Sharma" };
   }
 
   return generatePageMetadata({
@@ -85,14 +85,14 @@ export default async function BlogPostPage({ params }: Props) {
   const faqPairs = extractFaqFromHtml(contentOptimized);
 
   const authorProfiles: Record<string, { url: string; sameAs: string[]; page: string }> = {
-    "Alex Rivera": {
-      url: `${SITE_URL}/author/alex-rivera`,
-      sameAs: ["https://www.linkedin.com/in/yourhandle"],
-      page: "/author/alex-rivera",
+    "Peehu Sharma": {
+      url: `${SITE_URL}/author/peehu-sharma`,
+      sameAs: ["https://linkedin.com/in/peehu", "https://github.com/peehu"],
+      page: "/author/peehu-sharma",
     },
   };
   const authorName = resolveAuthorName(post.author);
-  const authorProfile = authorProfiles[authorName] || authorProfiles["Alex Rivera"];
+  const authorProfile = authorProfiles[authorName] || authorProfiles["Peehu Sharma"];
 
   // BlogPosting JSON-LD structured data (enhanced for LLM + E-E-A-T)
   const blogPostingLd = {
@@ -108,7 +108,7 @@ export default async function BlogPostPage({ params }: Props) {
       "@id": `${SITE_URL}/#person`,
       name: authorName,
       url: authorProfile.url,
-      jobTitle: "Product Builder & Engineer",
+      jobTitle: "Full-Stack Web Developer",
       sameAs: authorProfile.sameAs,
     },
     publisher: {

@@ -3,12 +3,12 @@
 import { motion } from "framer-motion";
 
 const features = [
-  { icon: "🧩", title: "Product thinking", body: "Scope the real problem, define the smallest version worth building, and sequence the work." },
-  { icon: "💻", title: "Engineering", body: "Full-stack web apps with modern tooling - clean, maintainable, and fast." },
-  { icon: "⚡", title: "No-code & automation", body: "Ship faster with the right no-code tools and glue automations where they fit." },
-  { icon: "🎨", title: "Design sense", body: "Interfaces that are clear, accessible, and pleasant to use." },
-  { icon: "📊", title: "Data & measurement", body: "Instrument what matters so decisions are based on evidence, not vibes." },
-  { icon: "🤝", title: "Collaboration", body: "Clear communication and dependable delivery, solo or embedded in a team." },
+  { icon: "💻", title: "Front-end development", body: "Responsive, accessible interfaces built with React.js, Next.js, and Angular." },
+  { icon: "🔗", title: "API integration", body: "Wiring front ends to Node.js and REST APIs for reliable, consistent data flow." },
+  { icon: "🛍️", title: "Shopify & Liquid", body: "Custom storefronts, theme development, and cleaner checkout and conversion flows." },
+  { icon: "⚙️", title: "Full-stack builds", body: "End-to-end web apps and internal tools, with Node.js on the back end." },
+  { icon: "🗄️", title: "Databases", body: "Modelling and querying data with MySQL and MongoDB behind the app." },
+  { icon: "🤖", title: "AI-assisted features", body: "Practical AI touches like matching and automation, plus Canva & AI media editing." },
 ];
 
 export function WhatWeDoSection() {
@@ -32,7 +32,7 @@ export function WhatWeDoSection() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-center text-base sm:text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto mb-16"
         >
-          How I help take products from idea to shipped.
+          How I help teams and brands ship web apps and storefronts.
         </motion.p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

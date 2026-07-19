@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Alex Rivera",
+  title: "Terms of Service | Peehu Sharma",
   description: "Terms of service - rules and guidelines for using this website.",
   alternates: { canonical: "/terms" },
 };
@@ -43,7 +43,7 @@ export default function TermsOfService() {
               2. About This Site
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-2">
-              This Site is the personal portfolio of Alex Rivera. It publishes:
+              This Site is the personal portfolio of Peehu Sharma. It publishes:
             </p>
             <ul className="list-disc list-inside text-gray-600 dark:text-gray-400 space-y-1 ml-4">
               <li>A showcase of selected work and projects</li>
@@ -94,7 +94,7 @@ export default function TermsOfService() {
               5. Intellectual Property
             </h2>
             <p className="text-gray-600 dark:text-gray-400">
-              The Site and its content (articles, images, and design) are owned by Alex Rivera and protected by applicable intellectual property laws. You may share links to articles, but you may not copy or republish substantial portions without written permission.
+              The Site and its content (articles, images, and design) are owned by Peehu Sharma and protected by applicable intellectual property laws. You may share links to articles, but you may not copy or republish substantial portions without written permission.
             </p>
           </section>
 
@@ -145,7 +145,7 @@ export default function TermsOfService() {
               If you have questions about these Terms, please contact us at:
             </p>
             <ul className="list-none text-gray-600 dark:text-gray-400 space-y-1">
-              <li><strong>Email:</strong> hello@example.com</li>
+              <li><strong>Email:</strong> peehu-dummy-email@gmail.com</li>
             </ul>
           </section>
         </div>

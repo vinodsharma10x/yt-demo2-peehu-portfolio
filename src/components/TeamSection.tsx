@@ -6,17 +6,17 @@ import Link from "next/link";
 // Edit these to make the section yours. The stats are placeholders — swap in
 // numbers that matter for you (years, projects, clients, a headline metric).
 const about = {
-  name: "Alex Rivera",
-  role: "Product Builder & Engineer",
+  name: "Peehu Sharma",
+  role: "Full-Stack Web Developer",
   image: "/images/avatar.svg",
-  linkedin: "https://www.linkedin.com/in/yourhandle",
+  linkedin: "https://linkedin.com/in/peehu",
   bio: [
-    "I'm a product builder and engineer. I take ideas from rough sketch to shipped product, working across design, code, and everything in between.",
-    "I care about useful software, clear thinking, and shipping. I've worked on products spanning web apps, internal tools, and automation.",
+    "I'm a full-stack web developer based in Jaipur. I build responsive web apps with React.js and Next.js, connect them to Node.js and REST APIs, and customise Shopify storefronts with Liquid.",
+    "I'm a BCA graduate and a fast learner who ships working software. I've built an AI-powered attendance system, a full-stack e-commerce site, and complete Shopify stores for real brands.",
   ],
   stats: [
-    { value: "10+", label: "Products shipped" },
-    { value: "Full-stack", label: "Design to deploy" },
+    { value: "5+", label: "Projects built" },
+    { value: "Full-stack", label: "Front end to API" },
     { value: "Open", label: "To new work" },
   ],
 };

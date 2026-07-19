@@ -8,32 +8,32 @@
 
   /* ===========================================================================
      BRAND COLORS — used together across the site:
-       • BRAND  = purple — primary: links, kickers, headline highlights,
+       • BRAND  = blue — primary: links, kickers, headline highlights,
          icons, blog covers, nav hover.
-       • ACCENT = pink — used on the primary call-to-action buttons for pop.
+       • ACCENT = orange — used on the primary call-to-action buttons for pop.
 
-     Tokens: bg-brand-500 / text-brand-600 (purple) and bg-accent-500 /
-     hover:bg-accent-600 (pink). To recolor, swap the hex values below with
+     Tokens: bg-brand-500 / text-brand-600 (blue) and bg-accent-500 /
+     hover:bg-accent-600 (orange). To recolor, swap the hex values below with
      any scale from https://tailwindcss.com/docs/colors
      =========================================================================== */
 
-  /* --- PRIMARY: PURPLE --- */
-  --color-brand-50:  #f5f3ff;
-  --color-brand-100: #ede9fe;
-  --color-brand-200: #ddd6fe;
-  --color-brand-400: #a78bfa;
-  --color-brand-500: #8b5cf6;
-  --color-brand-600: #7c3aed;
-  --color-brand-700: #6d28d9;
+  /* --- PRIMARY: BLUE --- */
+  --color-brand-50:  #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-200: #bfdbfe;
+  --color-brand-400: #60a5fa;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
 
-  /* --- ACCENT: PINK --- */
-  --color-accent-50:  #fdf2f8;
-  --color-accent-100: #fce7f3;
-  --color-accent-200: #fbcfe8;
-  --color-accent-400: #f472b6;
-  --color-accent-500: #ec4899;
-  --color-accent-600: #db2777;
-  --color-accent-700: #be185d;
+  /* --- ACCENT: ORANGE --- */
+  --color-accent-50:  #fff7ed;
+  --color-accent-100: #ffedd5;
+  --color-accent-200: #fed7aa;
+  --color-accent-400: #fb923c;
+  --color-accent-500: #f97316;
+  --color-accent-600: #ea580c;
+  --color-accent-700: #c2410c;
 }
 
 body {

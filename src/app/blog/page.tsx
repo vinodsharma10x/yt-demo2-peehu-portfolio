@@ -14,34 +14,33 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
   const isFiltered = params.tag || params.category || params.q;
 
   const base: Metadata = {
-    title: "Blog | Alex Rivera",
+    title: "Blog | Peehu Sharma",
     description:
-      "Notes on building and shipping products with code and no-code, by Alex Rivera.",
+      "Notes on building web apps and Shopify stores - React, Next.js, Node, and Liquid, by Peehu Sharma.",
     alternates: {
       canonical: `${SITE_URL}/blog`,
     },
     openGraph: {
-      title: "Blog | Alex Rivera",
+      title: "Blog | Peehu Sharma",
       description:
-        "Notes on building and shipping products with code and no-code.",
+        "Notes on building web apps and Shopify stores - React, Next.js, Node, and Liquid.",
       url: `${SITE_URL}/blog`,
-      siteName: "Alex Rivera",
+      siteName: "Peehu Sharma",
       type: "website",
       images: [
         {
           url: `${SITE_URL}/og-default.png`,
           width: 1200,
           height: 630,
-          alt: "Alex Rivera - Blog",
+          alt: "Peehu Sharma - Blog",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      site: "@yourhandle",
-      title: "Blog | Alex Rivera",
+      title: "Blog | Peehu Sharma",
       description:
-        "Notes on building and shipping products with code and no-code.",
+        "Notes on building web apps and Shopify stores - React, Next.js, Node, and Liquid.",
       images: [`${SITE_URL}/og-default.png`],
     },
   };
@@ -61,22 +60,23 @@ export default function BlogPage() {
   const blogLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Alex Rivera - Blog",
+    name: "Peehu Sharma - Blog",
     description:
-      "Notes on building and shipping products with code and no-code.",
+      "Notes on building web apps and Shopify stores - React, Next.js, Node, and Liquid.",
     url: `${SITE_URL}/blog`,
     author: {
       "@type": "Person",
-      name: "Alex Rivera",
-      jobTitle: "Product Builder & Engineer",
-      url: "https://www.linkedin.com/in/yourhandle",
+      name: "Peehu Sharma",
+      jobTitle: "Full-Stack Web Developer",
+      url: `${SITE_URL}/author/peehu-sharma`,
     },
     publisher: {
       "@type": "Person",
-      name: "Alex Rivera",
+      name: "Peehu Sharma",
       url: SITE_URL,
       sameAs: [
-        "https://www.linkedin.com/in/yourhandle",
+        "https://linkedin.com/in/peehu",
+        "https://github.com/peehu",
       ],
     },
     mainEntity: {

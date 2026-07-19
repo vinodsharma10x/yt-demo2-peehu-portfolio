@@ -3,9 +3,26 @@
 import { motion } from "framer-motion";
 
 const work = [
-  { title: "Project One", description: "What it is, your role, the stack, and the outcome. Add a link to a live demo or case study.", tag: "Web App", href: "#" },
-  { title: "Project Two", description: "A second project showing a different skill - e.g., an internal tool or automation.", tag: "Tooling", href: "#" },
-  { title: "Project Three", description: "A no-code build or experiment. Variety shows range.", tag: "No-code", href: "#" },
+  {
+    title: "iThemes — E-commerce Store",
+    description: "A full-stack e-commerce site with a React.js front end and a Node.js back end, wired together with a fully responsive UI and seamless front-end/back-end API integration.",
+    tag: "React · Node",
+  },
+  {
+    title: "Entry & Attendance Management System",
+    description: "An Angular + Node.js web app for employee entry and attendance tracking, with facial-recognition check-in/check-out for fully automated attendance.",
+    tag: "Angular · AI",
+  },
+  {
+    title: "Joy of Silver — Jewellery Store",
+    description: "A complete Shopify store built and deployed for a jewellery brand, with full theme customisation and an optimised storefront and checkout/conversion flow.",
+    tag: "Shopify · Liquid",
+  },
+  {
+    title: "Pet Adoption Platform",
+    description: "An in-progress platform for pet lovers in Jaipur, featuring AI-driven matching between pets and prospective owners. Built with React.js.",
+    tag: "React · AI",
+  },
 ];
 
 export function WorkSection() {
@@ -34,9 +51,8 @@ export function WorkSection() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {work.map((item, i) => (
-            <motion.a
+            <motion.div
               key={item.title}
-              href={item.href}
               initial={{ opacity: 0, y: 30, scale: 0.97 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true, margin: "-50px" }}
@@ -55,7 +71,7 @@ export function WorkSection() {
               <p className="mt-2 text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
                 {item.description}
               </p>
-            </motion.a>
+            </motion.div>
           ))}
         </div>
       </div>

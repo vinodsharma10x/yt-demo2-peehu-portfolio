@@ -37,10 +37,10 @@ interface BlogPostContentProps {
 }
 
 const AUTHORS: Record<string, { name: string; linkedin: string; title: string }> = {
-  "Alex Rivera": {
-    name: "Alex Rivera",
-    linkedin: "https://www.linkedin.com/in/yourhandle",
-    title: "Product Builder & Engineer",
+  "Peehu Sharma": {
+    name: "Peehu Sharma",
+    linkedin: "https://linkedin.com/in/peehu",
+    title: "Full-Stack Web Developer",
   },
 };
 
@@ -62,7 +62,7 @@ export function BlogPostContent({
     timeZone: "UTC",
   });
 
-  const authorInfo = (author && AUTHORS[author]) || AUTHORS["Alex Rivera"];
+  const authorInfo = (author && AUTHORS[author]) || AUTHORS["Peehu Sharma"];
 
   const [firstHalf, secondHalf] = splitContentAtMidpoint(content);
 
@@ -186,7 +186,7 @@ export function BlogPostContent({
                   </span>
                 ) : (
                   <span className="block aspect-video bg-gradient-to-br from-brand-50 to-brand-50 flex items-center justify-center">
-                    <span className="text-4xl font-extrabold text-brand-200">A</span>
+                    <span className="text-4xl font-extrabold text-brand-200">P</span>
                   </span>
                 )}
                 <span className="block p-4">

@@ -2,16 +2,26 @@ export const faqs = [
   {
     question: "What do you build?",
     answer:
-      "Web apps, internal tools, and automations - with code and no-code. I take projects from idea to shipped, working across product, design, and engineering.",
+      "Responsive web apps and e-commerce stores. On the front end I work with React.js, Next.js, and Angular; I connect them to Node.js and REST APIs, and I customise Shopify storefronts with Liquid.",
   },
   {
-    question: "Are you available for work?",
+    question: "Are you open to work?",
     answer:
-      "Yes - open to select freelance and full-time opportunities. Use the contact link to reach out.",
+      "Yes - I'm open to full-time roles and freelance projects, especially front-end, full-stack, and Shopify work. The fastest way to reach me is email.",
+  },
+  {
+    question: "What's your experience level?",
+    answer:
+      "I'm early in my career with hands-on professional experience. I'm currently a Full-Stack Developer Trainee at Vidhema Technologies and previously interned as a Java developer. I learn quickly and ship working software.",
   },
   {
     question: "What's your stack?",
     answer:
-      "Whatever fits the problem. Often TypeScript, React, and Next.js on the code side, plus no-code tools when they're the faster path.",
+      "React.js, Next.js, Angular, TypeScript, and JavaScript on the front end; Node.js and REST APIs on the back end; Shopify and Liquid for e-commerce; MySQL and MongoDB for data; plus Python and Git/GitHub.",
+  },
+  {
+    question: "Where are you based?",
+    answer:
+      "Jaipur, Rajasthan, India. I'm comfortable working remotely and collaborating with teams across time zones.",
   },
 ];

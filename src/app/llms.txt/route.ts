@@ -12,22 +12,22 @@ export async function GET() {
     )
     .join("\n");
 
-  const content = `# Alex Rivera
+  const content = `# Peehu Sharma
 
-> Portfolio of Alex Rivera - a product builder and engineer shipping useful things with code and no-code. Selected work, writing, and how to get in touch.
+> Portfolio of Peehu Sharma - a full-stack web developer in Jaipur building responsive React and Next.js apps, Node.js/REST integrations, and custom Shopify storefronts. Selected work, writing, and how to get in touch.
 
 ## About
 
-Alex Rivera is a product builder and engineer who takes ideas from rough sketch to shipped product, working across product, design, and engineering. The site showcases selected work, occasional writing, and a way to get in touch.
+Peehu Sharma is a full-stack web developer based in Jaipur, India. She builds responsive web applications and e-commerce stores - React.js and Next.js on the front end, Node.js and REST APIs on the back end, and custom Shopify storefronts with Liquid. A BCA graduate, she is currently a Full-Stack Developer Trainee at Vidhema Technologies. The site showcases selected work, occasional writing, and a way to get in touch.
 
-## What Alex does
+## What Peehu does
 
-- Product thinking - scoping the real problem and the smallest version worth building
-- Engineering - full-stack web apps with modern tooling
-- No-code & automation - shipping faster with the right tools
-- Design sense - clear, accessible, pleasant interfaces
-- Data & measurement - instrumenting what matters
-- Collaboration - dependable delivery, solo or embedded in a team
+- Front-end development - responsive interfaces with React.js, Next.js, and Angular
+- API integration - connecting front ends to Node.js and REST APIs
+- Shopify & Liquid - custom storefronts, theme development, and conversion flows
+- Full-stack builds - end-to-end web apps and internal tools with Node.js
+- Databases - modelling and querying data with MySQL and MongoDB
+- AI-assisted features - practical AI touches like matching and automation
 
 ## Website
 
@@ -39,8 +39,8 @@ ${postLinks}
 
 ## Key Pages
 
-- [Home](${SITE_URL}): Alex Rivera - product builder & engineer
-- [About](${SITE_URL}/about): About Alex Rivera
+- [Home](${SITE_URL}): Peehu Sharma - full-stack web developer
+- [About](${SITE_URL}/about): About Peehu Sharma
 - [Blog](${SITE_URL}/blog): Notes on building and shipping products
 - [RSS Feed](${SITE_URL}/feed.xml): Full-text RSS feed of all blog posts
 - [Privacy Policy](${SITE_URL}/privacy): Privacy policy
@@ -53,7 +53,7 @@ For complete article text, see: ${SITE_URL}/llms-full.txt
 ## Contact
 
 - Website: ${SITE_URL}
-- Email: hello@example.com
+- Email: peehu-dummy-email@gmail.com
 `;
 
   return new Response(content, {

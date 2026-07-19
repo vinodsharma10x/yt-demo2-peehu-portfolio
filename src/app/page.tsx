@@ -23,25 +23,28 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": `${SITE_URL}/#person`,
-    name: "Alex Rivera",
+    name: "Peehu Sharma",
     url: SITE_URL,
-    jobTitle: "Product Builder & Engineer",
+    jobTitle: "Full-Stack Web Developer",
     description:
-      "Product builder shipping useful things with code and no-code. I take ideas from rough sketch to shipped product, working across design, code, and everything in between.",
+      "Full-stack web developer in Jaipur building responsive React and Next.js apps, Node.js and REST API integrations, and custom Shopify storefronts.",
     image: `${SITE_URL}/images/avatar.svg`,
     sameAs: [
-      "https://github.com/yourhandle",
-      "https://www.linkedin.com/in/yourhandle",
-      "https://x.com/yourhandle",
+      "https://github.com/peehu",
+      "https://linkedin.com/in/peehu",
     ],
     knowsAbout: [
-      "Product design",
       "Web development",
-      "TypeScript",
       "React",
       "Next.js",
-      "No-code tools",
-      "Automation",
+      "Angular",
+      "TypeScript",
+      "Node.js",
+      "REST APIs",
+      "Shopify",
+      "Liquid",
+      "MongoDB",
+      "MySQL",
     ],
   };
 
@@ -49,7 +52,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": `${SITE_URL}/#website`,
-    name: "Alex Rivera",
+    name: "Peehu Sharma",
     url: SITE_URL,
     publisher: { "@id": `${SITE_URL}/#person` },
     potentialAction: {
@@ -121,7 +124,7 @@ export default function Home() {
                     </div>
                   ) : (
                     <div className="aspect-video bg-gradient-to-br from-brand-50 to-brand-50 flex items-center justify-center">
-                      <span className="text-4xl font-extrabold text-brand-200">A</span>
+                      <span className="text-4xl font-extrabold text-brand-200">P</span>
                     </div>
                   )}
                   <div className="p-5">

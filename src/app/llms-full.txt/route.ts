@@ -7,12 +7,12 @@ export async function GET() {
 
   const sections: string[] = [];
 
-  sections.push(`# Alex Rivera - Full Content
+  sections.push(`# Peehu Sharma - Full Content
 
-> Portfolio of Alex Rivera - a product builder and engineer shipping useful things with code and no-code.
+> Portfolio of Peehu Sharma - a full-stack web developer building responsive React and Next.js apps and custom Shopify stores.
 
 Website: ${SITE_URL}
-Author: Alex Rivera (Product Builder & Engineer)
+Author: Peehu Sharma (Full-Stack Web Developer)
 
 ---
 `);
@@ -36,7 +36,7 @@ Author: Alex Rivera (Product Builder & Engineer)
 
 URL: ${SITE_URL}/blog/${post.slug}
 Published: ${post.date}
-Author: ${post.author || "Alex Rivera"}
+Author: ${post.author || "Peehu Sharma"}
 Tags: ${post.tags.join(", ")}
 
 ${plainText}

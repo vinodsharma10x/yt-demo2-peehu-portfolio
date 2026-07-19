@@ -1,0 +1,68 @@
+---
+title: "Building a Facial-Recognition Attendance System with Angular and Node"
+excerpt: "How I built an employee entry and attendance web app with Angular and Node.js, and added facial-recognition check-in to automate attendance instead of manual sign-ins."
+date: "2026-07-15"
+tags: ["angular", "engineering", "web-app", "ai"]
+category: "guides"
+coverImage: "/images/blog/building-a-facial-recognition-attendance-system.svg"
+readingTime: "5 min read"
+author: "Peehu Sharma"
+featured: true
+---
+
+A facial-recognition attendance system replaces manual sign-in sheets with a camera-based check-in: an employee looks at the camera, the app matches their face against enrolled records, and it writes a timestamped entry automatically. I built one as an Angular front end talking to a Node.js REST API, and this is how the pieces fit together.
+
+## What problem does a facial-recognition attendance system solve?
+
+Manual attendance is slow and easy to game - people sign in for each other, forget to sign out, or fudge times. A facial-recognition system ties each check-in to a live face match, so attendance is automatic and harder to fake. It also removes shared touch-points like sign-in tablets or badge readers.
+
+## How is the system structured?
+
+The app splits cleanly into three layers, which keeps the face-matching logic separate from the UI and the data:
+
+| Layer | Responsibility | Tech |
+|---|---|---|
+| Front end | Camera capture, check-in/out UI, dashboards | Angular |
+| API | Auth, attendance records, matching requests | Node.js + REST |
+| Recognition | Face detection and matching | Recognition service/model |
+
+Keeping recognition behind the API means the Angular app never handles raw model logic - it just sends a captured frame and gets back a match result.
+
+## How does the check-in flow work?
+
+The check-in path is a short, predictable sequence, which matters because employees use it every day:
+
+1. The Angular app opens the camera and captures a frame.
+2. It sends the frame to the Node.js API.
+3. The API asks the recognition layer to match the face against enrolled users.
+4. On a confident match, the API writes a timestamped check-in (or check-out) record.
+5. The UI confirms the result so the employee knows it registered.
+
+The same flow handles check-out - the API decides whether an existing open entry should be closed based on the user's last record.
+
+## What did I learn building it?
+
+The hardest parts were not the face matching - they were the everyday edges around it. A few lessons stood out:
+
+- **Design for the unhappy path first.** Bad lighting, no match, or a slow camera are the common cases, not the exception. Clear on-screen feedback ("no face detected", "try again") matters more than a slick success animation.
+- **Keep the API the single source of truth.** All attendance rules - who is checked in, when a day rolls over - live in the Node layer, not the Angular components. That made the UI simple and the logic testable.
+- **Separate enrollment from check-in.** Registering a face is a different, slower flow than the daily check-in, so I kept them apart to keep the everyday path fast.
+- **Store events, not states.** Recording each check-in and check-out as an event (rather than a single "present/absent" flag) made reports and corrections far easier.
+
+## What would I do differently next time?
+
+I would add an obvious manual fallback earlier. Cameras fail, faces change, and there is always someone the model struggles with. A quick manual check-in that still writes to the same attendance records keeps the system usable on a bad day, and it removes the pressure for the recognition step to be perfect.
+
+## Frequently Asked Questions
+
+### What tech stack did you use?
+Angular for the front end, Node.js with a REST API for the back end, and a face-recognition step behind the API for matching. The front end only captures frames and shows results; all attendance logic lives in the API.
+
+### Why put face matching behind the API instead of in the browser?
+It keeps the Angular app simple, keeps matching logic and data in one place, and means the recognition step can change without touching the UI. The browser just sends a frame and displays the returned result.
+
+### How do you handle a failed or low-confidence match?
+The app shows clear feedback and lets the employee retry, and a manual fallback can still write to the same attendance records. Treating "no match" as a normal case, not an error, keeps the daily flow smooth.
+
+### Is a facial-recognition attendance system hard to build?
+The recognition step is the smaller part. Most of the work is the everyday flow - camera capture, clear feedback, storing check-in and check-out events, and building readable reports on top of that data.

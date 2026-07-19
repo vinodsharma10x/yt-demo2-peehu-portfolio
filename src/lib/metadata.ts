@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://example.com";
-const SITE_NAME = "Alex Rivera";
+const SITE_NAME = "Peehu Sharma";
 const DEFAULT_DESCRIPTION =
-  "Portfolio of Alex Rivera - building products with code and no-code. Selected work, writing, and how to get in touch.";
-const TWITTER = "yourhandle";
+  "Portfolio of Peehu Sharma - a full-stack web developer building responsive React and Next.js apps and custom Shopify stores. Selected work, writing, and how to get in touch.";
+const TWITTER = "";
 
 interface GenerateMetadataOptions {
   title: string;

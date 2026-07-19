@@ -75,7 +75,7 @@ export async function getPostBySlug(
     category: data.category || undefined,
     coverImage: data.coverImage || undefined,
     readingTime: data.readingTime || undefined,
-    author: data.author || "Alex Rivera",
+    author: data.author || "Peehu Sharma",
     featured: data.featured || false,
     content: htmlContent,
   };
@@ -106,7 +106,7 @@ export function getAllPostsMeta(): BlogPostMeta[] {
       category: data.category || undefined,
       coverImage: data.coverImage || undefined,
       readingTime: data.readingTime || undefined,
-      author: data.author || "Alex Rivera",
+      author: data.author || "Peehu Sharma",
       featured: data.featured || false,
     };
   });

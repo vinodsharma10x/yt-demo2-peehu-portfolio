@@ -5,46 +5,47 @@ import { getAllPostsMeta } from "@/lib/mdx";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://example.com";
 
 export const metadata: Metadata = {
-  title: "Alex Rivera | Product Builder & Engineer",
-  description: "Alex Rivera is a product builder and engineer who ships useful things with code and no-code. Read articles on building and shipping products.",
-  alternates: { canonical: "/author/alex-rivera" },
+  title: "Peehu Sharma | Full-Stack Web Developer",
+  description: "Peehu Sharma is a full-stack web developer building responsive React and Next.js apps and custom Shopify stores. Read articles on building and shipping web projects.",
+  alternates: { canonical: "/author/peehu-sharma" },
   openGraph: {
-    title: "Alex Rivera | Product Builder & Engineer",
-    description: "Alex Rivera is a product builder and engineer who ships useful things with code and no-code. Read articles on building and shipping products.",
-    url: `${SITE_URL}/author/alex-rivera`,
-    images: [{ url: `${SITE_URL}/images/avatar.svg`, width: 400, height: 400, alt: "Alex Rivera, product builder & engineer" }],
+    title: "Peehu Sharma | Full-Stack Web Developer",
+    description: "Peehu Sharma is a full-stack web developer building responsive React and Next.js apps and custom Shopify stores. Read articles on building and shipping web projects.",
+    url: `${SITE_URL}/author/peehu-sharma`,
+    images: [{ url: `${SITE_URL}/images/avatar.svg`, width: 400, height: 400, alt: "Peehu Sharma, full-stack web developer" }],
   },
 };
 
-export default function AlexRiveraPage() {
-  // Get all posts by Alex
+export default function PeehuSharmaPage() {
+  // Get all posts by Peehu
   const allPosts = getAllPostsMeta();
   const authorPosts = allPosts.filter(
-    (p) => p.author === "Alex Rivera"
+    (p) => p.author === "Peehu Sharma"
   );
 
   const personLd = {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": `${SITE_URL}/#person`,
-    name: "Alex Rivera",
-    url: `${SITE_URL}/author/alex-rivera`,
+    name: "Peehu Sharma",
+    url: `${SITE_URL}/author/peehu-sharma`,
     image: `${SITE_URL}/images/avatar.svg`,
-    jobTitle: "Product Builder & Engineer",
-    description: "Product builder and engineer who ships useful things with code and no-code.",
+    jobTitle: "Full-Stack Web Developer",
+    description: "Full-stack web developer building responsive React and Next.js apps and custom Shopify storefronts.",
     sameAs: [
-      "https://github.com/yourhandle",
-      "https://www.linkedin.com/in/yourhandle",
-      "https://x.com/yourhandle",
+      "https://github.com/peehu",
+      "https://linkedin.com/in/peehu",
     ],
     knowsAbout: [
-      "Product design",
       "Web development",
-      "TypeScript",
       "React",
       "Next.js",
-      "No-code tools",
-      "Automation",
+      "Angular",
+      "TypeScript",
+      "Node.js",
+      "REST APIs",
+      "Shopify",
+      "Liquid",
     ],
   };
 
@@ -60,18 +61,18 @@ export default function AlexRiveraPage() {
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
             <img
               src="/images/avatar.svg"
-              alt="Alex Rivera, product builder & engineer"
+              alt="Peehu Sharma, full-stack web developer"
               width={120}
               height={120}
               className="w-28 h-28 rounded-full object-cover object-top shadow-md"
             />
             <div className="text-center sm:text-left">
               <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100 tracking-tight">
-                Alex Rivera
+                Peehu Sharma
               </h1>
-              <p className="text-brand-500 font-semibold mt-1">Product Builder &amp; Engineer</p>
+              <p className="text-brand-500 font-semibold mt-1">Full-Stack Web Developer</p>
               <a
-                href="https://www.linkedin.com/in/yourhandle"
+                href="https://linkedin.com/in/peehu"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block mt-3 text-sm text-brand-500 hover:text-brand-600 dark:hover:text-brand-400 font-medium"
@@ -87,10 +88,10 @@ export default function AlexRiveraPage() {
         <div className="max-w-[640px] mx-auto px-4 sm:px-6">
           <div className="space-y-4 text-base text-gray-700 dark:text-gray-300 leading-relaxed">
             <p>
-              I&apos;m a product builder and engineer. I take ideas from rough sketch to shipped product, working across design, code, and everything in between.
+              I&apos;m a full-stack web developer based in Jaipur. I build responsive web apps with React.js and Next.js, connect them to Node.js and REST APIs, and customise Shopify storefronts with Liquid.
             </p>
             <p>
-              I care about useful software, clear thinking, and shipping. I&apos;ve worked on products spanning web apps, internal tools, and automation.
+              I&apos;m a BCA graduate and a fast learner who ships working software. I&apos;ve built an AI-powered attendance system, a full-stack e-commerce site, and complete Shopify stores for real brands.
             </p>
             <p>
               This is where I write about what I learn building and shipping. If something resonates, get in touch.
@@ -102,7 +103,7 @@ export default function AlexRiveraPage() {
       <section className="bg-gray-50 dark:bg-gray-950 py-12 sm:py-16">
         <div className="max-w-[720px] mx-auto px-4 sm:px-6">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8">
-            Articles by Alex ({authorPosts.length})
+            Articles by Peehu ({authorPosts.length})
           </h2>
           <div className="space-y-4">
             {authorPosts.map((post) => (

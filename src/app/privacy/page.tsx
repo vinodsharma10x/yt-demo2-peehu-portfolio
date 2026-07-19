@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Alex Rivera",
+  title: "Privacy Policy | Peehu Sharma",
   description: "Privacy policy - how this site collects, uses, and protects your information.",
   alternates: { canonical: "/privacy" },
 };
@@ -31,7 +31,7 @@ export default function PrivacyPolicy() {
               1. Introduction
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-2">
-              This site (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) is the personal portfolio of Alex Rivera. This Privacy Policy describes how we collect, use, and protect your information when you visit the site.
+              This site (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) is the personal portfolio of Peehu Sharma. This Privacy Policy describes how we collect, use, and protect your information when you visit the site.
             </p>
             <p className="text-gray-600 dark:text-gray-400">
               This is a content website. It has no user accounts or logins. By using the site, you agree to this policy. Please also review our <Link href="/terms" className="text-brand-500 hover:text-brand-700 dark:hover:text-brand-400">Terms of Service</Link>.
@@ -140,7 +140,7 @@ export default function PrivacyPolicy() {
               <li><strong>Object to or restrict</strong> processing where applicable law (such as GDPR) grants that right</li>
             </ul>
             <p className="text-gray-600 dark:text-gray-400 mt-3">
-              To exercise any of these rights, email us at hello@example.com.
+              To exercise any of these rights, email us at peehu-dummy-email@gmail.com.
             </p>
           </section>
 
@@ -191,7 +191,7 @@ export default function PrivacyPolicy() {
               If you have questions about this Privacy Policy, contact us at:
             </p>
             <ul className="list-none text-gray-600 dark:text-gray-400 space-y-1">
-              <li><strong>Email:</strong> hello@example.com</li>
+              <li><strong>Email:</strong> peehu-dummy-email@gmail.com</li>
             </ul>
           </section>
         </div>

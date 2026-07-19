@@ -27,7 +27,7 @@ export async function GET() {
       <description>${escapeXml(post.excerpt)}</description>
       <content:encoded><![CDATA[${post.content}]]></content:encoded>
       <pubDate>${new Date(post.date).toUTCString()}</pubDate>
-      <author>${escapeXml(post.author || "Alex Rivera")}</author>
+      <author>${escapeXml(post.author || "Peehu Sharma")}</author>
       ${post.tags.map((tag) => `<category>${escapeXml(tag)}</category>`).join("\n      ")}
     </item>`);
   }
@@ -37,9 +37,9 @@ export async function GET() {
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
   xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Alex Rivera - Blog</title>
+    <title>Peehu Sharma - Blog</title>
     <link>${SITE_URL}/blog</link>
-    <description>Notes on building and shipping products with code and no-code.</description>
+    <description>Notes on building web apps and Shopify stores - React, Next.js, Node, and Liquid.</description>
     <language>en-us</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml"/>
