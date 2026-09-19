@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
 import { ThemeProvider } from "next-themes";
 import Script from "next/script";
+import { GtmScript, GtmNoScript } from "@/components/GoogleTagManager";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://example.com";
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
@@ -96,6 +97,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         /> */}
       </head>
       <body className="min-h-screen flex flex-col bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100">
+        <GtmScript />
+        <GtmNoScript />
         <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange>
           <a
             href="#main"
